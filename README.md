@@ -2,6 +2,8 @@
 
 Personal portfolio of Rushikesh Shirkar, Senior Software Engineer and Product Engineer based in Pune, India.
 
+Live site: https://rushishirkar.com
+
 The site presents six years of work across SaaS, fintech, trade-tech and eCommerce, including three multi-tenant products taken from zero to production.
 
 ## Sections
@@ -15,6 +17,7 @@ The site presents six years of work across SaaS, fintech, trade-tech and eCommer
 | Technical Arsenal | Filterable skills grid grouped by layer |
 | Engineering Stories | Four case studies with animated architecture diagrams |
 | Philosophy | Operating principles |
+| Quick Answers | Six frequently asked questions, mirrored in structured data |
 | Contact | Email, mobile, LinkedIn and GitHub |
 
 ## Features
@@ -24,7 +27,8 @@ The site presents six years of work across SaaS, fintech, trade-tech and eCommer
 - Responsive layout from phone to desktop
 - Reduced-motion support for all animation
 - Keyboard-accessible tabs, dialogs and controls
-- SEO metadata and JSON-LD structured data
+- SEO metadata, Open Graph tags and JSON-LD structured data
+- `robots.txt`, `sitemap.xml` and `llms.txt` for search engines and AI assistants
 
 ## Tech stack
 
@@ -37,9 +41,18 @@ The site presents six years of work across SaaS, fintech, trade-tech and eCommer
 
 ```
 .
-├── index.html    Markup and content
-├── styles.css    Design tokens, layout and motion
-└── main.js       Interactions, canvas graphics and command palette
+├── index.html          Markup, content, metadata and structured data
+├── styles.css          Design tokens, layout and motion
+├── main.js             Interactions, canvas graphics and command palette
+├── 404.html            Not-found page
+├── robots.txt          Crawler rules
+├── sitemap.xml         Sitemap
+├── llms.txt            Plain-text profile for AI assistants
+├── site.webmanifest    Web app manifest
+├── og-image.png        Social share image (1200 x 630)
+├── favicon.svg         Icons (plus apple-touch-icon.png, icon-192.png, icon-512.png)
+└── tools/
+    └── set-domain.sh   Rewrites the site domain in every file that needs it
 ```
 
 ## Run locally
@@ -54,13 +67,21 @@ Then open http://localhost:4173.
 
 ## Deploy
 
-The site is fully static. Upload the three files to any static host, such as GitHub Pages, Netlify, Vercel or Cloudflare Pages. No build command is required.
+The site is fully static and is hosted on Vercel. No build command or output directory is required.
+
+To move the site to a different domain, update every absolute URL in one step:
+
+```bash
+sh tools/set-domain.sh https://new-domain.com/
+```
 
 ## Updating content
 
 - Text and section content: `index.html`
 - Career stage data for the hero stack and the story diagrams: `main.js`
 - Colours, typography and spacing: the `:root` tokens at the top of `styles.css`
+- When the FAQ text changes, update the matching `FAQPage` entry in the JSON-LD block and in `llms.txt`
+- After any content change, update `lastmod` in `sitemap.xml`
 
 ## Contact
 

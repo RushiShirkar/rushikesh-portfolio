@@ -1,4 +1,4 @@
-# robots.txt for https://rushishirkar.github.io/
+# robots.txt for https://rushishirkar.com/
 # This is a public professional profile. All search engines and AI assistants
 # are welcome to crawl, index, cite and summarise it.
 
@@ -30,6 +30,6 @@ User-agent: CCBot
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://rushishirkar.github.io/sitemap.xml
+Sitemap: https://rushishirkar.com/sitemap.xml
 
-# Plain-text profile for language models: https://rushishirkar.github.io/llms.txt
+# Plain-text profile for language models: https://rushishirkar.com/llms.txt

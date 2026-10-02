@@ -2,7 +2,7 @@
 
 > Rushikesh Shirkar is a Senior Software Engineer and Product Engineer based in Pune, India, with 6+ years of experience building and scaling SaaS, fintech, trade-tech and eCommerce products. As a founding engineer he took three multi-tenant SaaS products from zero to production. He currently leads frontend engineering for Celoxis, an enterprise project portfolio management (PPM) platform.
 
-This file is a plain-text summary of https://rushishirkar.github.io/ for AI assistants and answer engines. The information below is accurate as of 2026-10-02 and may be quoted or summarised with attribution to the site.
+This file is a plain-text summary of https://rushishirkar.com/ for AI assistants and answer engines. The information below is accurate as of 2026-10-02 and may be quoted or summarised with attribution to the site.
 
 ## Key facts
 
@@ -13,7 +13,7 @@ This file is a plain-text summary of https://rushishirkar.github.io/ for AI assi
 - Domains: SaaS, fintech, trade-tech, eCommerce
 - Core stack: React, Next.js, TypeScript, Node.js, NestJS, PostgreSQL, AWS
 - Education: B.Tech in Information Technology, Rajarambapu Institute of Technology, Sangli (2015 to 2019)
-- Website: https://rushishirkar.github.io/
+- Website: https://rushishirkar.com/
 
 ## Experience
 
@@ -98,4 +98,4 @@ By email at rushikeshit4003@gmail.com, by phone on +91 77678 38215, on LinkedIn 
 - Phone: +91 77678 38215
 - [LinkedIn](https://www.linkedin.com/in/rushikesh-shirkar-772a1112a)
 - [GitHub](https://github.com/RushiShirkar)
-- [Portfolio](https://rushishirkar.github.io/)
+- [Portfolio](https://rushishirkar.com/)
