@@ -1,0 +1,29 @@
+{
+  "name": "Rushikesh Shirkar | Senior Software Engineer",
+  "short_name": "R. Shirkar",
+  "description": "Rushikesh Shirkar is a Senior Software Engineer in Pune with 6+ years in React, Next.js, Node.js and AWS. Built three SaaS products from zero to production.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0c0d0f",
+  "theme_color": "#0c0d0f",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

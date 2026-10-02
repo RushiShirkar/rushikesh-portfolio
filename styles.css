@@ -393,6 +393,18 @@ section:focus{outline:none}
 .st-fig small{font:400 10.5px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--mute)}
 @media (max-width:900px){.corestack{margin-left:0}}
 
+/* faq */
+.faq{margin-left:calc(100% / 12 * 2);border-top:1px solid var(--line2)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:22px 0;transition:color .2s}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 20px/1 var(--mono);color:var(--accent-ink);transition:transform .35s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq summary:hover{color:var(--accent-ink)}
+.faq h3{font:600 clamp(1.1rem,1.8vw,1.5rem)/1.2 var(--sans);letter-spacing:-.03em}
+.faq p{color:var(--mute);font-size:15.5px;max-width:74ch;padding:0 40px 26px 0}
+@media (max-width:900px){.faq{margin-left:0}.faq p{padding-right:0}}
+
 /* status bar */
 .status{position:fixed;inset:auto 0 0;height:var(--status);z-index:90;display:flex;align-items:center;gap:18px;padding-inline:var(--pad);background:var(--bg);border-top:1px solid var(--line);color:var(--mute);font-size:10.5px}
 .status .grow{flex:1}
