@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import middleware, { prefersMarkdown, config, PAGES, NOT_FOUND_MD } from '../middleware.js';
+import vercelEntry, { createMiddleware, prefersMarkdown, config, PAGES, NOT_FOUND_MD } from '../middleware.js';
 
 const req = (path, accept, method = 'GET') =>
   new Request('https://rushishirkar.com' + path, { method, headers: accept ? { accept } : {} });
@@ -12,6 +12,8 @@ const staticFetch = async (url) => {
     ? new Response(`# twin of ${name}\n`, { status: 200 })
     : new Response('missing', { status: 404 });
 };
+
+const middleware = (request, fetchImpl) => createMiddleware(fetchImpl)(request);
 
 test('prefersMarkdown follows Accept and q-values', () => {
   assert.equal(prefersMarkdown('text/markdown'), true);
@@ -74,4 +76,17 @@ test('HEAD returns headers without a body', async () => {
 test('falls back to HTML if the Markdown twin cannot be fetched', async () => {
   const broken = async () => new Response('err', { status: 500 });
   assert.equal(await middleware(req('/', 'text/markdown'), broken), undefined);
+});
+
+test('default export works with the (request, context) signature Vercel uses', async (t) => {
+  const context = { waitUntil() {} };
+  const realFetch = globalThis.fetch;
+  globalThis.fetch = staticFetch;
+  t.after(() => { globalThis.fetch = realFetch; });
+  assert.equal(await vercelEntry(req('/', 'text/html'), context), undefined);
+  const md = await vercelEntry(req('/', 'text/markdown'), context);
+  assert.equal(md.status, 200);
+  assert.equal(await md.text(), '# twin of /index.md\n');
+  const missing = await vercelEntry(req('/nope', 'text/markdown'), context);
+  assert.equal(missing.status, 404);
 });
