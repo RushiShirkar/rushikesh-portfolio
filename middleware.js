@@ -67,17 +67,23 @@ function markdownResponse(body, status, method, canonical) {
   return new Response(method === 'HEAD' ? null : body, { status, headers });
 }
 
-export default async function middleware(request, fetchImpl = fetch) {
-  if (!prefersMarkdown(request.headers.get('accept'))) return undefined;
+// Vercel calls the default export as (request, context), so the fetch
+// implementation is injected through a factory rather than a parameter.
+export function createMiddleware(fetchImpl) {
+  return async function middleware(request) {
+    if (!prefersMarkdown(request.headers.get('accept'))) return undefined;
 
-  const url = new URL(request.url);
-  const path = url.pathname.replace(/\/+$/, '') || '/';
-  const twin = PAGES[path];
+    const url = new URL(request.url);
+    const path = url.pathname.replace(/\/+$/, '') || '/';
+    const twin = PAGES[path];
 
-  if (!twin) return markdownResponse(NOT_FOUND_MD, 404, request.method);
+    if (!twin) return markdownResponse(NOT_FOUND_MD, 404, request.method);
 
-  const res = await fetchImpl(new URL(twin, url), { headers: { accept: 'text/markdown' } });
-  if (!res.ok) return undefined; // fall back to the HTML page
-  const canonical = SITE + (path === '/' || path === '/index' ? '/' : path);
-  return markdownResponse(await res.text(), 200, request.method, canonical);
+    const res = await fetchImpl(new URL(twin, url), { headers: { accept: 'text/markdown' } });
+    if (!res.ok) return undefined; // fall back to the HTML page
+    const canonical = SITE + (path === '/' || path === '/index' ? '/' : path);
+    return markdownResponse(await res.text(), 200, request.method, canonical);
+  };
 }
+
+export default createMiddleware((...args) => fetch(...args));
