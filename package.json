@@ -1,0 +1,9 @@
+{
+  "name": "rushikesh-portfolio",
+  "private": true,
+  "type": "module",
+  "description": "Portfolio of Rushikesh Shirkar, Senior Software Engineer",
+  "scripts": {
+    "test": "node --test"
+  }
+}

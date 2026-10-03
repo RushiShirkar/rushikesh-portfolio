@@ -358,6 +358,9 @@ section:focus{outline:none}
 .contact-links b span{font:inherit;letter-spacing:inherit;text-transform:none;color:inherit}
 .contact-links a:hover{color:var(--accent-ink)}
 .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;color:var(--mute);padding-block:28px;margin-top:clamp(56px,9vh,110px);border-top:1px solid var(--line)}
+.foot-links{display:flex;flex-wrap:wrap;gap:6px 18px}
+.foot a{transition:color .2s}
+.foot a:hover{color:var(--accent-ink)}
 @media (max-width:900px){.contact-l,.contact-links{grid-column:1/-1}.contact-links{margin-top:28px}}
 
 /* products · arsenal · stories · second pass */

@@ -1,0 +1,101 @@
+# Rushikesh Shirkar: Senior Software Engineer and Product Engineer
+
+> Rushikesh Shirkar is a Senior Software Engineer and Product Engineer based in Pune, India, with 6+ years of experience building and scaling SaaS, fintech, trade-tech and eCommerce products. As a founding engineer he took three multi-tenant SaaS products from zero to production. He currently leads frontend engineering for Celoxis, an enterprise project portfolio management (PPM) platform.
+
+Source: https://rushishirkar.com/ (accurate as of 3 October 2026). Other pages: [About](https://rushishirkar.com/about), [Contact](https://rushishirkar.com/contact), [Privacy](https://rushishirkar.com/privacy).
+
+## Key facts
+
+- Name: Rushikesh Shirkar
+- Current role: Senior Software Engineer (frontend lead) at Celoxis Technologies, December 2025 to present
+- Location: Pune, Maharashtra, India (IST, UTC+5:30)
+- Experience: 6+ years, since November 2019
+- Domains: SaaS, fintech, trade-tech, eCommerce
+- Core stack: React, Next.js, TypeScript, Node.js, NestJS, PostgreSQL, AWS
+- Education: B.Tech in Information Technology, Rajarambapu Institute of Technology, Sangli (2015 to 2019)
+- Website: https://rushishirkar.com/
+
+## Experience
+
+### Celoxis Technologies, Senior Software Engineer (December 2025 to present)
+
+Enterprise Project Portfolio Management (PPM) SaaS platform serving global clients.
+
+- Owns the frontend codebase and leads frontend engineering: code standards, pull-request review, technical design and delivery within enterprise release cycles.
+- Shipped Android and iOS apps with Capacitor from the existing React web codebase, with no separate native codebase.
+- Migrated the legacy PHP marketing website to Next.js, improving page performance, Core Web Vitals and SEO.
+- Integrated Product Fruits for in-app onboarding and PostHog for product analytics.
+- Builds scheduling, portfolio analytics, resource planning and dashboard experiences with React, TypeScript, Ant Design and Bryntum Gantt.
+- Drives frontend performance through code splitting, lazy loading, memoization and render-path optimisation.
+
+### Dreamful Technologies (Eximfiles), Founding Engineer (October 2022 to December 2025)
+
+Trade-tech SaaS for Indian exporters.
+
+- Architected and scaled three multi-tenant SaaS products from zero to production: frontend, backend services, database design and cloud infrastructure.
+- Designed REST APIs and modular service integrations with Node.js, NestJS and PostgreSQL, including multi-tenant data models.
+- Created a shared UI architecture and component library that accelerated feature delivery by 30% across products.
+- Owned AWS infrastructure (EC2, S3, Lambda, Amplify), CI/CD pipelines, serverless workflows, monitoring and production deployments.
+- Worked directly with founders and business stakeholders on product direction and roadmap.
+
+### Spekond Technologies, Senior Software Engineer (October 2021 to October 2022)
+
+- Built high-traffic, customer-facing web applications with Next.js, React, server-side rendering and REST APIs.
+- Improved Core Web Vitals, accessibility and technical SEO, contributing to a 25% increase in organic traffic.
+- Implemented SSR, static generation and route-level code splitting.
+
+### Fashiostreet, Software Engineer (November 2019 to October 2021)
+
+- Built eCommerce and food delivery applications for web and mobile with React, Capacitor, Redux, Cordova, Laravel and MySQL.
+- Owned end-to-end development: API design, database design, deployment and production support.
+- Integrated payment gateways, push notifications and third-party services.
+
+## Products
+
+- [Celoxis](https://www.celoxis.com): Enterprise PPM SaaS with scheduling, portfolio analytics, resource planning and dashboards, plus Android and iOS apps. Role: frontend lead.
+- [Eximfiles](https://eximfiles.io): Export documentation platform for trade documents and compliance workflows. Role: founding engineer, built from zero to production.
+- [eBRC Platform](https://ebrc.in): Platform for generating and tracking electronic Bank Realisation Certificates. Role: founding engineer, built from zero to production.
+- [Scriphouse](https://scriphouse.com): Marketplace for trading duty credit scrips between exporters and importers. Role: founding engineer, built from zero to production.
+
+## Skills
+
+- Languages: TypeScript, JavaScript (ES6+), SQL, PHP, HTML5, CSS3
+- Frontend: React, Next.js, Redux, Capacitor (iOS and Android), Vue.js, Tailwind CSS, Ant Design, Bryntum Gantt, D3.js, SSR, Core Web Vitals, accessibility (WCAG), technical SEO
+- Backend: Node.js, NestJS, REST APIs, GraphQL, Laravel, microservices, multi-tenant architecture, payment gateway integration
+- Databases: PostgreSQL, MongoDB, Redis, MySQL
+- Cloud and DevOps: AWS (EC2, S3, Lambda, Amplify), Docker, CI/CD, serverless, monitoring, Git
+- Practices: system design, frontend architecture, design systems, product analytics (PostHog), user onboarding (Product Fruits), Agile/Scrum, AI-assisted development (Claude, Cursor, ChatGPT)
+
+## Frequently asked questions
+
+### Who is Rushikesh Shirkar?
+
+Rushikesh Shirkar is a Senior Software Engineer and Product Engineer based in Pune, India, with more than six years of experience building SaaS, fintech, trade-tech and eCommerce products. He currently leads frontend engineering at Celoxis Technologies, an enterprise project portfolio management platform.
+
+### What does Rushikesh Shirkar specialise in?
+
+He specialises in frontend architecture with React, Next.js and TypeScript, and works across the full stack with Node.js, NestJS, PostgreSQL and AWS. His focus areas include multi-tenant SaaS architecture, design systems, web performance and Core Web Vitals, accessibility and technical SEO.
+
+### Which products has Rushikesh Shirkar built?
+
+As Founding Engineer at Dreamful Technologies he built three multi-tenant SaaS products from zero to production: Eximfiles, an export documentation platform; the eBRC Platform, for electronic Bank Realisation Certificates; and Scriphouse, a marketplace for trading duty credit scrips. At Celoxis he leads the frontend of the enterprise PPM platform and shipped its Android and iOS apps from the existing React codebase.
+
+### Where has Rushikesh Shirkar worked?
+
+Celoxis Technologies as Senior Software Engineer (December 2025 to present), Dreamful Technologies as Founding Engineer (October 2022 to December 2025), Spekond Technologies as Senior Software Engineer (October 2021 to October 2022) and Fashiostreet as Software Engineer (November 2019 to October 2021). He holds a B.Tech in Information Technology from Rajarambapu Institute of Technology, Sangli.
+
+### What results has Rushikesh Shirkar delivered?
+
+He created a shared UI architecture and component library that accelerated feature delivery by 30% across three products, and his Core Web Vitals, accessibility and technical SEO work contributed to a 25% increase in organic traffic. He also migrated a legacy PHP marketing site to Next.js and brought an enterprise web platform to Android and iOS without a separate native codebase.
+
+### How can I contact Rushikesh Shirkar?
+
+By email at rushikeshit4003@gmail.com, by phone on +91 77678 38215, on LinkedIn at linkedin.com/in/rushikesh-shirkar-772a1112a, or on GitHub at github.com/RushiShirkar. He is based in Pune, India (IST, UTC+5:30).
+
+## Contact
+
+- Email: rushikeshit4003@gmail.com
+- Phone: +91 77678 38215
+- [LinkedIn](https://www.linkedin.com/in/rushikesh-shirkar-772a1112a)
+- [GitHub](https://github.com/RushiShirkar)
+- [Portfolio](https://rushishirkar.com/)

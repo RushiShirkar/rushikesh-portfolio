@@ -75,12 +75,33 @@ To move the site to a different domain, update every absolute URL in one step:
 sh tools/set-domain.sh https://new-domain.com/
 ```
 
+## Agent readiness
+
+- `middleware.js` (Vercel Routing Middleware) serves Markdown when a request prefers `text/markdown`: `/`, `/about`, `/contact` and `/privacy` return their `.md` twin, and unknown paths return a Markdown 404. Browsers keep getting HTML.
+- `vercel.json` enables clean URLs and sends `Vary: Accept` on pages.
+- `llms.txt` follows the llmstxt.org format and tells agents when to use the site.
+
+Check it with:
+
+```bash
+curl -sS -i -H 'Accept: text/markdown' https://rushishirkar.com/
+```
+
+## Tests
+
+```bash
+npm test
+```
+
+Runs the Node test suites in `tests/` (no dependencies): content negotiation, Markdown 404s, page and schema checks, llms.txt structure and sitemap coverage.
+
 ## Updating content
 
 - Text and section content: `index.html`
 - Career stage data for the hero stack and the story diagrams: `main.js`
 - Colours, typography and spacing: the `:root` tokens at the top of `styles.css`
 - When the FAQ text changes, update the matching `FAQPage` entry in the JSON-LD block and in `llms.txt`
+- When page text changes, update its Markdown twin (`index.md`, `about.md`, `contact.md`, `privacy.md`)
 - After any content change, update `lastmod` in `sitemap.xml`
 
 ## Contact
